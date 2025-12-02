@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitologia Romana</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>🏛 Mitologia Romana</h1>
+            <p>Os deuses, heróis e lendas do Império Eterno</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introdução</a></li>
+                <li><a href="#deuses">Deuses</a></li>
+                <li><a href="#herois">Heróis</a></li>
+                <li><a href="#criaturas">Criaturas</a></li>
+                <li><a href="#lugares">Lugares</a></li>
+                <li><a href="#artefatos">Artefatos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- ========== INTRODUÇÃO ========== -->
+        <section id="intro">
+            <h2>Introdução</h2>
+            <p>
+                A Mitologia Romana reúne histórias de poder, guerra, honra e destino
+            </p>
+        </section>
+
+        <!-- ========== DEUSES ========== -->
+        <section id="deuses">
+            <h2>Deuses</h2>
+            <p>Conheça os principais deuses romanos. </p>
+            <div class="deuses-grid">
+
+                <!-- ========== Júpiter ========== -->
+                <div class="deus-card">
+                    <img src="IMG/Jupiter.avif" alt="jupiter">
+                    <h3>Júpiter</h3>
+                    <p>Júpiter é o rei dos deuses na mitologia romana, senhor dos céus e do trovão.
+                        Ele representa a justiça, a ordem e a autoridade suprema, sendo o protetor de Roma
+                        e das suas leis.</p>
+                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ========== Juno ========== -->
+                <div class="deus-card">
+                    <img src="IMG/Juno.avif" alt="Juno">
+                    <h3>Juno</h3>
+                    <p>Juno é a rainha dos deuses e deusa do casamento, da família e da proteção das mulheres. Ela
+                        simboliza a união, a fertilidade e a força do lar, sendo a guardiã das esposas e das mães em
+                        Roma.</p>
+                    <button class="modal-btn" data-modal="juno-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ========== Netuno ========== -->
+                <div class="deus-card">
+                    <img src="IMG/Netuno.jpg" alt="Netuno">
+                    <h3>Netuno</h3>
+                    <p>Netuno é o deus dos mares e oceanos, governando as águas e as tempestades. Símbolo da força da
+                        natureza, protege marinheiros e viagens pelo mar.</p>
+                    <button class="modal-btn" data-modal="netuno-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ========== Marte ========== -->
+                <div class="deus-card">
+                    <img src="IMG/Marte.avif" alt="Marte">
+                    <h3>Marte</h3>
+                    <p>Marte é o deus da guerra e da coragem, associado à força militar e à proteção de Roma. Diferente
+                        de outras tradições, ele também simboliza honra, disciplina e defesa do povo, sendo considerado
+                        o pai mítico de Rômulo, fundador da cidade.</p>
+                    <button class="modal-btn" data-modal="marte-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ========== Vênus ========== -->
+                <div class="deus-card">
+                    <img src="IMG/Venus.webp" alt="Vênus">
+                    <h3>Vênus</h3>
+                    <p>Vênus é a deusa do amor, da beleza e da fertilidade, ligada às paixões e aos relacionamentos.
+                        Também simboliza charme, desejo e harmonia.</p>
+                    <button class="modal-btn" data-modal="venus-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ========== Apolo ========== -->
+                <div class="deus-card">
+                    <img src="IMG/Apolo.jpg" alt="Apolo">
+                    <h3>Apolo</h3>
+                    <p>Apolo é o deus do sol, da música, da poesia e das profecias, ligado à luz, à arte e ao
+                        conhecimento.</p>
+                    <button class="modal-btn" data-modal="apolo-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ========== Diana ========== -->
+                <div class="deus-card">
+                    <img src="IMG/Diana.jpg" alt="Diana">
+                    <h3>Diana</h3>
+                    <p>Diana é a deusa da lua, da caça e da natureza selvagem, símbolo de liberdade e proteção.</p>
+                    <button class="modal-btn" data-modal="diana-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ========== Minerva ========== -->
+                <div class="deus-card">
+                    <img src="IMG/Minerva.avif" alt="Minerva">
+                    <h3>Minerva</h3>
+                    <p>Minerva é a deusa da sabedoria, da estratégia e do conhecimento, ligada à inteligência e à
+                        justiça.</p>
+                    <button class="modal-btn" data-modal="minerva-modal">Mais Detalhes</button>
+                </div>
+            </div>
+
+
+
+
+            <!-- ========== MODAL DEUSES ========== -->
+            <!--Jupiter-->
+            <div id="jupiter-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Júpiter</h2>
+                    <p>Júpiter é o principal deus do panteão romano, governante dos céus e controlador dos raios.
+                        Considerado o protetor do Estado romano, ele simbolizava a justiça, a autoridade e o equilíbrio
+                        entre os homens e os deuses. Seu culto era central em Roma, especialmente no templo do
+                        Capitolino.</p>
+                </div>
+            </div>
+            <!-- JUNO-->
+            <div id="juno-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Juno</h2>
+                    <p>Juno é a rainha dos deuses na mitologia romana e a protetora do casamento, da família e das
+                        mulheres. Ela representava a união sagrada entre marido e esposa, a fertilidade e a força do
+                        lar. Como guardiã de Roma, também simbolizava a estabilidade do Estado e a proteção do povo
+                        romano. Seu culto era muito importante, especialmente entre as mulheres, que a homenageavam em
+                        rituais ligados ao nascimento e à vida familiar.</p>
+                </div>
+            </div>
+
+            <!--NETUNO-->
+            <div id="netuno-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Netuno</h2>
+                    <p>Netuno é o deus dos mares, oceanos e tempestades na mitologia romana. Ele governava todas as
+                        águas e era responsável tanto pela tranquilidade dos mares quanto por sua fúria, causando
+                        tempestades e terremotos marítimos. Representado com seu tridente, simbolizava o poder
+                        incontrolável da natureza. Marinheiros e pescadores costumavam fazer oferendas a Netuno em busca
+                        de proteção durante as viagens e boa sorte na pesca.</p>
+                </div>
+            </div>
+
+            <!--Marte-->
+            <div id="marte-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Marte</h2>
+                    <p>Marte é o deus da guerra, da coragem e da disciplina militar, sendo uma das divindades mais
+                        veneradas de Roma. Diferente da visão puramente destrutiva da guerra, Marte representava a
+                        defesa, a honra e a força que garantia a segurança do povo romano. Ele era considerado o pai
+                        mítico de Rômulo e Remo, os fundadores de Roma, o que o tornava diretamente ligado à origem e à
+                        identidade do império.</p>
+                </div>
+            </div>
+
+            <!--VÊNUS-->
+            <div id="venus-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Vênus</h2>
+                    <p>Vênus é a deusa romana do amor, da beleza e da fertilidade, associada às paixões humanas e à
+                        harmonia entre as pessoas. Era considerada ancestral mítica do povo romano através de seu filho
+                        Eneias, herói fundador de Roma. Seu culto celebrava a sensualidade, o romance e o poder do afeto
+                        como força criadora da vida.</p>
+                </div>
+            </div>
+
+            <!--Apolo-->
+            <div id="apolo-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Apolo</h2>
+                    <p>Apolo é o deus romano do sol, da música, da poesia e das profecias, representando a luz, a
+                        inspiração artística e a busca pelo conhecimento. Ele também estava ligado à medicina e à cura,
+                        sendo invocado para proteção contra doenças. Seus oráculos eram famosos por revelar o destino
+                        dos homens e dos impérios.</p>
+                </div>
+            </div>
+
+            <!--Diana-->
+            <div id="diana-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Diana</h2>
+                    <p>Diana é a deusa romana da lua, da caça e das florestas, associada à natureza selvagem e à
+                        proteção dos animais. Ela também simbolizava independência, pureza e força feminina. Como
+                        protetora das mulheres jovens, era venerada em rituais ligados ao nascimento e à fertilidade.
+                    </p>
+                </div>
+            </div>
+
+            <!--Minerva-->
+            <div id="minerva-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Minerva</h2>
+                    <p>Minerva é a deusa romana da sabedoria, da razão e da estratégia militar. Ao contrário de Marte,
+                        representava o aspecto inteligente da guerra: planejamento, tática e disciplina. Também era
+                        protetora das artes, da ciência e dos artesãos, sendo símbolo do equilíbrio entre conhecimento e
+                        poder.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== HERÓIS ========== -->
+        <section id="herois">
+            <h2>Heróis</h2>
+            <p>Grandes líderes e lendas fundadoras.</p>
+        </section>
+
+        <!-- ========== Criaturas ========== -->
+        <section id="criaturas">
+            <h2>Criaturas</h2>
+            <p>Monstros e entidades místicas.</p>
+        </section>
+
+        <!-- ========== LUGARES ========== -->
+        <section id="lugares">
+            <h2>Lugares Místicos</h2>
+            <p>O submundo, os campos elísios e o Olimpo.</p>
+        </section>
+
+        <!-- ========== ARTEFATOS ========== -->
+        <section id="artefatos">
+            <h2>Artefatos</h2>
+            <p>Relíquias divinas de poder.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados - @2025</p>
+    </footer>
+
+    <script src="Js.js"></script>
+</body>
+</html>
