@@ -96,6 +96,18 @@ section {
     border: 2px solid rgb(226, 215, 215);
 }
 
+section#intro{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(75,45,25,0.9);
+    border: solid 3px;
+    border-radius: 8px;
+    padding: 25px;
+    transition: 0.5s;
+    text-align: center;
+}
+
 .modal{
     display: none;
     justify-content: center;
