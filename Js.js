@@ -1,28 +1,28 @@
-// Abrir modais
 const modalBtns = document.querySelectorAll(".modal-btn");
+const closeBtns = document.querySelectorAll(".close");
+const modals = document.querySelectorAll(".modal");
+
+// ABRIR MODAL
 modalBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         const modalId = btn.getAttribute("data-modal");
         const modal = document.getElementById(modalId);
-        modal.style.display = "flex";
+        modal.classList.add("active");
     });
 });
 
-// Fechar modais ao clicar no "×"
-const closeBtns = document.querySelectorAll(".close");
+// FECHAR NO X
 closeBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        const modal = btn.closest(".modal");
-        modal.style.display = "none";
+        btn.closest(".modal").classList.remove("active");
     });
 });
 
-// Fechar modais ao clicar fora do conteúdo
-const modals = document.querySelectorAll(".modal");
+// FECHAR CLICANDO NO FUNDO
 modals.forEach(modal => {
-    modal.addEventListener("click", (e) => {
+    modal.addEventListener("click", e => {
         if (e.target === modal) {
-            modal.style.display = "none";
+            modal.classList.remove("active");
         }
     });
 });

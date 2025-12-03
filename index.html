@@ -13,21 +13,20 @@
 <body>
 
     <header>
-        <div class="#">
+        <div class="header-container">   
             <h1>🏛 Mitologia Romana</h1>
             <p>Os deuses, heróis e lendas do Império Eterno</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#intro">Introdução</a></li>
-                <li><a href="#deuses">Deuses</a></li>
-                <li><a href="#herois">Heróis</a></li>
-                <li><a href="#criaturas">Criaturas</a></li>
-                <li><a href="#lugares">Lugares</a></li>
-                <li><a href="#artefatos">Artefatos</a></li>
-            </ul>
-        </nav>
-
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introdução</a></li>
+                    <li><a href="#deuses">Deuses</a></li>
+                    <li><a href="#herois">Heróis</a></li>
+                    <li><a href="#criaturas">Criaturas</a></li>
+                    <li><a href="#lugares">Lugares</a></li>
+                    <li><a href="#artefatos">Artefatos</a></li>
+                </ul>
+            </nav>    
     </header>
 
     <main>
@@ -37,6 +36,7 @@
             <p>
                 A Mitologia Romana reúne histórias de poder, guerra, honra e destino
             </p>
+            <img src="IMG/intro.jpg" alt="">
         </section>
 
         <!-- ========== DEUSES ========== -->
@@ -227,12 +227,240 @@
         <section id="herois">
             <h2>Heróis</h2>
             <p>Grandes líderes e lendas fundadoras.</p>
+            <div class="herois-grid">
+
+                <!-- ==========  ========== -->
+                <div class="herois-card">
+                    <img src="IMG/Romulo.webp" alt="">
+                    <h3>Rômulo</h3>
+                    <p>Rômulo é o fundador lendário de Roma e irmão de Remo. Ele é símbolo de coragem, liderança e da
+                        origem da cidade eterna.</p>
+                    <button class="modal-btn" data-modal="romulo-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="herois-card">
+                    <img src="IMG/" alt="">
+                    <h3>Remo</h3>
+                    <p>Remo é irmão de Rômulo e cofundador de Roma, representando ousadia e espírito aventureiro.</p>
+                    <button class="modal-btn" data-modal="remo-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="herois-card">
+                    <img src="IMG/" alt="">
+                    <h3>Éneas</h3>
+                    <p>Éneas é o herói troiano que fugiu da destruição de Troia para fundar a linhagem que daria origem
+                        a Roma.</p>
+                    <button class="modal-btn" data-modal="eneas-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="herois-card">
+                    <img src="IMG/" alt="">
+                    <h3>Hércules</h3>
+                    <p>Hércules é o herói de força sobre-humana, conhecido por seus 12 trabalhos impossíveis.</p>
+                    <button class="modal-btn" data-modal="hercules-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="herois-card">
+                    <img src="IMG/" alt="">
+                    <h3>Quíron</h3>
+                    <p>Quíron é o centauro sábio e mentor de heróis, mestre em medicina, guerra e música.</p>
+                    <button class="modal-btn" data-modal="quiron-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="herois-card">
+                    <img src="IMG/" alt="">
+                    <h3>Orfeu</h3>
+                    <p>Orfeu é o músico lendário capaz de encantar deuses, mortais e até a natureza com sua arte.</p>
+                    <button class="modal-btn" data-modal="orfeu-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="herois-card">
+                    <img src="IMG/" alt="">
+                    <h3>Turno</h3>
+                    <p>Turno é o príncipe e herói dos rútulos, rival de Éneas, representando bravura e resistência.</p>
+                    <button class="modal-btn" data-modal="turno-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="herois-card">
+                    <img src="IMG/" alt="">
+                    <h3>Marco Fúrio Camilo</h3>
+                    <p>Camilo é o general e herói militar romano, conhecido como “Segundo Fundador de Roma”. </p>
+                    <button class="modal-btn" data-modal="marco-modal">Mais Detalhes</button>
+                </div>
+            </div>
+
+            <!-- ========== MODAL HEROIS ========== -->
+            <!--Rômulo-->
+            <div id="romulo-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Rômulo</h2>
+                    <p>Rômulo, junto com seu irmão Remo, foi criado por uma loba após serem abandonados. Tornou-se o
+                        primeiro rei de Roma ao fundar a cidade, consolidando sua lenda como um líder forte, estratégico
+                        e essencial na história mítica de Roma.</p>
+                </div>
+            </div>
+
+            <!--Remo-->
+            <div id="remo-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Remo</h2>
+                    <p>Remo, gêmeo de Rômulo, ajudou na fundação de Roma, mas morreu após uma disputa com seu irmão
+                        sobre o território da nova cidade. Sua história simboliza rivalidade e tragédia familiar na
+                        mitologia romana.</p>
+                </div>
+            </div>
+
+            <!--Éneas-->
+            <div id="eneas-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Éneas</h2>
+                    <p>Filho da deusa Vênus e do mortal Anquises, Éneas sobreviveu à queda de Troia e viajou até a
+                        península Itálica. Ele é considerado o ancestral mítico dos romanos e um exemplo de coragem,
+                        dever e devoção ao destino.</p>
+                </div>
+            </div>
+
+
+            <!--Hércules-->
+            <div id="hercules-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Hércules</h2>
+                    <p>Hércules completou doze tarefas extremamente difíceis como penitência por suas ações,
+                        demonstrando coragem, resistência e bravura. Ele é celebrado como herói e, após sua morte, foi
+                        elevado ao status de deus, tornando-se símbolo de superação e força heroica.</p>
+                </div>
+            </div>
+
+            <!--Quíron-->
+            <div id="quiron-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Quíron</h2>
+                    <p>Ao contrário de outros centauros, Quíron era bondoso e sábio. Ele treinou muitos heróis da
+                        mitologia, incluindo Éneas, transmitindo conhecimento, disciplina e valores heroicos. Sua figura
+                        representa sabedoria, ensino e proteção.</p>
+                </div>
+            </div>
+
+            <!--Orfeu-->
+            <div id="Orfeu-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Orfeu</h2>
+                    <p>Dotado de um talento musical extraordinário, Orfeu podia mover corações, animais e até objetos
+                        com sua música. Ele desceu ao mundo dos mortos para tentar resgatar sua esposa Eurídice,
+                        mostrando amor, coragem e dedicação, tornando-se um símbolo eterno da arte e do poder da música.
+                    </p>
+                </div>
+            </div>
+
+            <!--Turno-->
+            <div id="turno-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Turno</h2>
+                    <p>Como líder dos rútulos, Turno enfrentou Éneas pelo controle da Itália. Apesar de sua coragem e
+                        habilidades de guerreiro, acabou derrotado, simbolizando a inevitabilidade do destino e a luta
+                        pelo poder na mitologia romana.</p>
+                </div>
+            </div>
+
+            <!--Marco Fúrio Camilo-->
+            <div id="Marco-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Marco Fúrio Camilo</h2>
+                    <p>Marco Fúrio Camilo destacou-se por suas vitórias militares e pela defesa de Roma contra invasões
+                        inimigas. Ele é lembrado como símbolo de estratégia, patriotismo e liderança, sendo uma figura
+                        histórica que encarna a força e a resiliência romana.</p>
+                </div>
+            </div>
+
         </section>
+
 
         <!-- ========== Criaturas ========== -->
         <section id="criaturas">
             <h2>Criaturas</h2>
             <p>Monstros e entidades místicas.</p>
+
+            <div class="criaturas-grid">
+
+                <!-- ==========  ========== -->
+                <div class="criaturas-card">
+                    <img src="IMG/" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="criaturas-card">
+                    <img src="IMG/" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="criaturas-card">
+                    <img src="IMG/" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="criaturas-card">
+                    <img src="IMG/" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="criaturas-card">
+                    <img src="IMG/" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="criaturas-card">
+                    <img src="IMG/" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="criaturas-card">
+                    <img src="IMG/" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                </div>
+
+                <!-- ==========  ========== -->
+                <div class="criaturas-card">
+                    <img src="IMG/" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                </div>
+            </div>
         </section>
 
         <!-- ========== LUGARES ========== -->
@@ -254,4 +482,5 @@
 
     <script src="Js.js"></script>
 </body>
+
 </html>
