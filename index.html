@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <div class="#">
+        <div class="header-container">
             <h1>🏛 Mitologia Romana</h1>
             <p>Os deuses, heróis e lendas do Império Eterno</p>
         </div>
@@ -27,7 +27,6 @@
                 <li><a href="#artefatos">Artefatos</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
@@ -42,6 +41,7 @@
 
         <!-- ========== DEUSES ========== -->
         <section id="deuses">
+            <p><p><p></p></p></p><p></p>
             <h2>Deuses</h2>
             <p>Conheça os principais deuses romanos. </p>
             <div class="deuses-grid">
@@ -232,68 +232,68 @@
 
                 <!-- ==========  ========== -->
                 <div class="herois-card">
-                    <img src="IMG/Romulo.webp" alt="">
+                    <img src="IMG/Romulo.webp" alt="romuro">
                     <h3>Rômulo</h3>
                     <p>Rômulo é o fundador lendário de Roma e irmão de Remo. Ele é símbolo de coragem, liderança e da
                         origem da cidade eterna.</p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <button class="modal-btn" data-modal="romulo-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="herois-card">
-                    <img src="IMG/" alt="">
+                    <img src="IMG/remo.jpg" alt="">
                     <h3>Remo</h3>
                     <p>Remo é irmão de Rômulo e cofundador de Roma, representando ousadia e espírito aventureiro.</p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <button class="modal-btn" data-modal="remo-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="herois-card">
-                    <img src="IMG/" alt="">
+                    <img src="IMG/eneas.webp" alt="">
                     <h3>Éneas</h3>
                     <p>Éneas é o herói troiano que fugiu da destruição de Troia para fundar a linhagem que daria origem
                         a Roma.</p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <button class="modal-btn" data-modal="eneas-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="herois-card">
-                    <img src="IMG/" alt="">
+                    <img src="IMG/hercules.jpg" alt="">
                     <h3>Hércules</h3>
                     <p>Hércules é o herói de força sobre-humana, conhecido por seus 12 trabalhos impossíveis.</p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <button class="modal-btn" data-modal="hercules-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="herois-card">
-                    <img src="IMG/" alt="">
+                    <img src="IMG/quiron.jpg" alt="">
                     <h3>Quíron</h3>
                     <p>Quíron é o centauro sábio e mentor de heróis, mestre em medicina, guerra e música.</p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <button class="modal-btn" data-modal="quiron-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="herois-card">
-                    <img src="IMG/" alt="">
+                    <img src="IMG/orfeu.png" alt="">
                     <h3>Orfeu</h3>
                     <p>Orfeu é o músico lendário capaz de encantar deuses, mortais e até a natureza com sua arte.</p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <button class="modal-btn" data-modal="orfeu-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="herois-card">
-                    <img src="IMG/" alt="">
+                    <img src="IMG/turno.jpg" alt="">
                     <h3>Turno</h3>
                     <p>Turno é o príncipe e herói dos rútulos, rival de Éneas, representando bravura e resistência.</p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <button class="modal-btn" data-modal="turno-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="herois-card">
-                    <img src="IMG/" alt="">
+                    <img src="IMG/marco.webp" alt="">
                     <h3>Marco Fúrio Camilo</h3>
                     <p>Camilo é o general e herói militar romano, conhecido como “Segundo Fundador de Roma”. </p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <button class="modal-btn" data-modal="marco-modal">Mais Detalhes</button>
                 </div>
             </div>
 
@@ -355,7 +355,7 @@
             </div>
 
             <!--Orfeu-->
-            <div id="Orfeu-modal" class="modal">
+            <div id="orfeu-modal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <h2>Orfeu</h2>
@@ -378,7 +378,7 @@
             </div>
 
             <!--Marco Fúrio Camilo-->
-            <div id="Marco-modal" class="modal">
+            <div id="marco-modal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <h2>Marco Fúrio Camilo</h2>
@@ -401,73 +401,173 @@
                 <!-- ==========  ========== -->
                 <div class="criaturas-card">
                     <img src="IMG/" alt="">
-                    <h3></h3>
-                    <p></p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <h3>Loba Capitolina</h3>
+                    <p>A loba que amamentou Rômulo e Remo, símbolo da fundação de Roma.</p>
+                    <button class="modal-btn" data-modal="capitolina-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="criaturas-card">
                     <img src="IMG/" alt="">
-                    <h3></h3>
-                    <p></p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <h3>Hidra de Lerna</h3>
+                    <p>Serpente monstruosa com várias cabeças que se regeneram.</p>
+                    <button class="modal-btn" data-modal="lerna-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="criaturas-card">
                     <img src="IMG/" alt="">
-                    <h3></h3>
-                    <p></p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <h3>Leão de Nemeia</h3>
+                    <p>Fera invulnerável derrotada por Hércules.</p>
+                    <button class="modal-btn" data-modal="nemeia-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="criaturas-card">
                     <img src="IMG/" alt="">
-                    <h3></h3>
-                    <p></p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <h3>Minotauro</h3>
+                    <p>Criatura com corpo humano e cabeça de touro, habitante do labirinto.</p>
+                    <button class="modal-btn" data-modal="minotauro-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="criaturas-card">
                     <img src="IMG/" alt="">
-                    <h3></h3>
-                    <p></p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <h3>Águia de Júpiter</h3>
+                    <p>Ave divina mensageira dos céus.</p>
+                    <button class="modal-btn" data-modal="aguia-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="criaturas-card">
                     <img src="IMG/" alt="">
-                    <h3></h3>
-                    <p></p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <h3>Pégaso</h3>
+                    <p>Cavalo alado que simboliza liberdade e inspiração divina.</p>
+                    <button class="modal-btn" data-modal="pegaso-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="criaturas-card">
                     <img src="IMG/" alt="">
-                    <h3></h3>
-                    <p></p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <h3>Arpias</h3>
+                    <p>Mulheres aladas que espalhavam pragas e desgraça.</p>
+                    <button class="modal-btn" data-modal="arpias-modal">Mais Detalhes</button>
                 </div>
 
                 <!-- ==========  ========== -->
                 <div class="criaturas-card">
                     <img src="IMG/" alt="">
-                    <h3></h3>
-                    <p></p>
-                    <button class="modal-btn" data-modal="jupiter-modal">Mais Detalhes</button>
+                    <h3>Medusa</h3>
+                    <p>Górgona cujo olhar transformava seres em pedra.</p>
+                    <button class="modal-btn" data-modal="medusa-modal">Mais Detalhes</button>
                 </div>
             </div>
+
+            <!-- ========== MODAL Criaturas ========== -->
+
+            <div id="capitolina-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Loba Capitolina</h2>
+                    <p>A Loba Capitolina é a criatura mais famosa da mitologia romana, responsável por salvar e
+                        alimentar os gêmeos Rômulo e Remo após terem sido abandonados às margens do rio Tibre. Sua
+                        imagem se tornou o maior símbolo do nascimento de Roma, representando proteção, força e origem
+                        divina da cidade eterna.</p>
+                </div>
+            </div>
+
+            <div id="lerna-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Hidra de Lerna</h2>
+                    <p>A Hidra de Lerna era um monstro aquático de múltiplas cabeças, onde cada cabeça cortada se
+                        regenerava em duas novas. Enfrentada por Hércules em um de seus doze trabalhos, simboliza
+                        desafios aparentemente impossíveis e a persistência diante do perigo.</p>
+                </div>
+            </div>
+
+            <div id="nemeia-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Leão de Nemeia</h2>
+                    <p>O Leão de Nemeia possuía uma pele tão resistente que nenhuma arma conseguia perfurá-la. Hércules
+                        o derrotou usando apenas suas próprias mãos e passou a vestir sua pele como armadura. É um
+                        símbolo clássico de força bruta e vitória contra o impossível.</p>
+                </div>
+            </div>
+
+            <div id="minotauro-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Minotauro</h2>
+                    <p>O Minotauro vivia preso no Labirinto de Creta, exigindo sacrifícios humanos até ser derrotado
+                        pelo herói Teseu. Para os romanos, ele representava a monstruosidade causada pelos erros humanos
+                        e pela ira divina, sendo uma figura de terror e mistério.</p>
+                </div>
+            </div>
+
+            <div id="aguia-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Aguia de Júpiter</h2>
+                    <p>A águia sagrada de Júpiter era símbolo de poder supremo e domínio celestial. Servia como
+                        mensageira dos deuses e representava autoridade, vitória e proteção divina sobre Roma. Tornou-se
+                        também emblema militar romano em estandartes e legiões.</p>
+                </div>
+            </div>
+
+            <div id="pegaso-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Pégaso</h2>
+                    <p>Nascido do sangue da Medusa, Pégaso era um cavalo alado capaz de voar aos céus. Tornou-se símbolo
+                        da elevação espiritual, da poesia e da ligação entre mortais e deuses. Era associado às Musas e
+                        ao mundo da inspiração artística.</p>
+                </div>
+            </div>
+
+            <div id="arpias-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Arpias</h2>
+                    <p>As Arpias eram criaturas com corpo de ave e rosto de mulher, conhecidas por roubar alimentos e
+                        espalhar doenças por onde passavam. Símbolos do castigo divino, surgiam para punir os que
+                        desobedeciam aos deuses, trazendo caos e sofrimento.</p>
+                </div>
+            </div>
+
+            <div id="medusa-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Medusa</h2>
+                    <p>Medusa era uma das três Górgonas e possuía serpentes no lugar de cabelos. Seu olhar petrificava
+                        qualquer um que a encarasse diretamente. Derrotada por Perseu com a ajuda dos deuses, tornou-se
+                        símbolo do terror mítico e também de proteção, já que sua imagem era usada como amuleto contra o
+                        mal.</p>
+                </div>
+            </div>
+
+
         </section>
 
         <!-- ========== LUGARES ========== -->
         <section id="lugares">
             <h2>Lugares Místicos</h2>
-            <p>O submundo, os campos elísios e o Olimpo.</p>
+            <p>Três reinos governam o destino das almas:
+                o Submundo, lar das sombras;
+                os Campos Elísios, refúgio dos heróis;
+                e o Olimpo, trono dos deuses.</p>
+
+            <h2>Mapa dos Reinos</h2>
+
+            <h3>🌑 Submundo</h3>
+            <p>Domínio das almas, rios místicos e julgamentos eternos.</p>
+
+            <h3>🌿 Campos Elísios</h3>
+            <p>Paraíso dos heróis, onde reina a paz e a luz.</p>
+
+            <h3>⛰️ Monte Olimpo</h3>
+            <p>Palácio dos deuses, acima das nuvens.</p>
         </section>
 
         <!-- ========== ARTEFATOS ========== -->
