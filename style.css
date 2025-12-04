@@ -105,7 +105,8 @@ h1 {
 }
 
 h2 {
-    color: #bfa048;
+    color: #f8b702;
+    font-weight: 1000;
     font-size: 2.5rem;
     padding: 10px;
     text-align: center;
@@ -121,9 +122,11 @@ h3 {
 }
 
 p {
-    color: #f2e6cf;
+    color: #fcfa9f;
     font-size: 1.3rem;
     padding: 10px;
+    font-weight: 1000;
+    text-decoration: solid;
 }
 
 section {
@@ -138,6 +141,12 @@ section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+}
+
+.deus-card p, .herois-card p, .criaturas-card p {
+    color: #d4c4a5;
+    font-size: 1.3rem;
+    padding: 10px;
 }
 
 .deus-card,
