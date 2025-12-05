@@ -14,16 +14,25 @@ body {
 header {
     position: sticky;
     top: 0;
+<<<<<<< HEAD
     z-index: 900;
+=======
+    z-index: 1000;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     background: linear-gradient(180deg, #4b2d19, #2b1b12);
     border-bottom: 3px solid #d4af37;
     box-shadow: 0 8px 20px rgba(0,0,0,0.6);
     backdrop-filter: blur(6px);
 }
 
+<<<<<<< HEAD
 
 .header-container {
     max-width: 1000px;
+=======
+.header-container {
+    max-width: 1300px;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     margin: 0 auto;
     padding: 2rem 2rem 1.5rem 2rem;
     display: flex;
@@ -38,8 +47,11 @@ header h1 {
 }
 
 header p {
+<<<<<<< HEAD
     color: #d4af37;
     font-size: 1.4rem;
+=======
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     opacity: 0.85;
     margin-top: 20px;
 }
@@ -54,7 +66,11 @@ nav {
     background: transparent;
     justify-content: center;
     top: 0;
+<<<<<<< HEAD
     width: 90%;
+=======
+    width: 100%;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
 }
 
 nav ul {
@@ -95,7 +111,7 @@ nav a:hover {
     color: #d4af37;
     background: rgba(212,175,55, 0.08);
 }
-
+/*  */
 h1 {
     font-family: 'Cinzel', serif;
     font-size: 4rem;
@@ -112,6 +128,7 @@ h2 {
     color: #f8b702;
     font-weight: 1000;
     font-size: 2.5rem;
+<<<<<<< HEAD
     text-align: center;
     margin-bottom: 20px;
     background: rgba(0, 0, 0, 0.55);
@@ -120,6 +137,11 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 6px 16px;
+=======
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
 }
 
 h3 {
@@ -131,11 +153,16 @@ h3 {
 }
 
 p {
+<<<<<<< HEAD
     color: #bfa048;
+=======
+    color: #fcfa9f;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     font-size: 1.3rem;
     padding: 10px;
     font-weight: 1000;
     text-decoration: solid;
+<<<<<<< HEAD
 }
 
 #t {
@@ -153,6 +180,12 @@ p {
 section {
     scroll-margin-top: 235px;
     max-width: 1400px;
+=======
+}
+
+section {
+    max-width: 1200px;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     padding: 1rem;
     margin: 0 auto 80px auto;
     margin-bottom: 70px;
@@ -187,7 +220,11 @@ section {
 .herois-card img,
 .criaturas-card img {
     width: 100%;
+<<<<<<< HEAD
     height: 310px;
+=======
+    height: 260px;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     object-fit: cover;
     border-radius: 12px;
     border: 2px solid rgba(226, 215, 215, 0.7);
@@ -202,9 +239,16 @@ section {
 
 
 section#intro {
+<<<<<<< HEAD
     margin-top: 100px;
     width: 100%;
     display: flex;
+=======
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     background: rgba(75, 45, 25, 0.9);
     border: solid 3px;
     border-radius: 8px;
@@ -218,6 +262,7 @@ section#intro {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .intro-img {
     width: 100%;
     position: relative;
@@ -244,6 +289,8 @@ section#intro {
     line-height: 1.7;
 }
 
+=======
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
 .modal {
     display: none;
     inset: 0;
@@ -299,13 +346,23 @@ section#intro {
 
 .modal-content {
     background: linear-gradient(145deg, #3f2716, #2b1b12);
+<<<<<<< HEAD
     padding: 2rem;
     margin-top: 17rem;
+=======
+
+    padding: 2rem;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     border: 2px solid #d4af37;
     color: #f7f1e5;
     border-radius: 1rem;
     width: 90%;
+<<<<<<< HEAD
     max-width: 800px;
+=======
+    max-width: 500px;
+    width: 90%;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     position: relative;
     animation: popup 0.3s ease;
 }
@@ -339,12 +396,18 @@ section#intro {
 
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
    section#intro{
         grid-template-columns: 1fr;
     }
 
     .intro-img h2{
         font-size: 2rem;
+=======
+    section#intro {
+        width: 90%;
+        margin: 10px;
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
     }
 
     h1 {
@@ -358,4 +421,9 @@ section#intro {
     p {
         font-size: 1.1rem;
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
 }

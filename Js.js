@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> f0cee5a8f50fb8132733f424f4816f4d599fda26
 const modalBtns = document.querySelectorAll(".modal-btn");
 const closeBtns = document.querySelectorAll(".close");
 const modals = document.querySelectorAll(".modal");
