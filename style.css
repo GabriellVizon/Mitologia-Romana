@@ -112,9 +112,14 @@ h2 {
     color: #f8b702;
     font-weight: 1000;
     font-size: 2.5rem;
-    padding: 10px;
     text-align: center;
     margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    border: 2px solid #d4af37;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
 }
 
 h3 {
@@ -133,7 +138,20 @@ p {
     text-decoration: solid;
 }
 
+#t {
+    color: #bfa048;
+    font-size: 1.3rem;
+    padding: 10px;
+    font-weight: 1000;
+    text-decoration: solid;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    border: 2px solid #d4af37;
+    width: 450px;
+}
+
 section {
+    scroll-margin-top: 235px;
     max-width: 1400px;
     padding: 1rem;
     margin: 0 auto 80px auto;
@@ -184,16 +202,46 @@ section {
 
 
 section#intro {
-    margin-top: 80px;
+    margin-top: 100px;
     width: 100%;
     display: flex;
-    flex-direction: column;
     background: rgba(75, 45, 25, 0.9);
     border: solid 3px;
     border-radius: 8px;
     padding: 25px;
     transition: 0.5s;
     text-align: center;
+    scroll-margin-top: 365px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.intro-img {
+    width: 100%;
+    position: relative;
+    
+}
+
+.intro-img h2 {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -100px;
+    left: 300px;
+    margin: 0;
+    padding: 6px 16px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    border: 2px solid #d4af37;
+    color: #f8b702;
+    font-size: 2.3rem;
+}
+
+.intro-text {
+    font-size: 1.4rem;
+    line-height: 1.7;
 }
 
 .modal {
@@ -291,9 +339,12 @@ section#intro {
 
 
 @media (max-width: 768px) {
-    section#intro {
-        width: 90%;
-        margin: 10px;
+   section#intro{
+        grid-template-columns: 1fr;
+    }
+
+    .intro-img h2{
+        font-size: 2rem;
     }
 
     h1 {
@@ -307,6 +358,4 @@ section#intro {
     p {
         font-size: 1.1rem;
     }
-
-
 }
