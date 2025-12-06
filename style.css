@@ -7,6 +7,8 @@ body {
     color: #f2e6cf;
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,6 +19,12 @@ header {
     border-bottom: 3px solid #d4af37;
     box-shadow: 0 8px 20px rgba(0,0,0,0.6);
     backdrop-filter: blur(6px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .header-container {
