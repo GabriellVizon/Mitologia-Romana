@@ -18,7 +18,7 @@ closeBtns.forEach(btn => {
     });
 });
 
-// FECHAR CLICANDO NO FUNDO
+// FECHAR CLICANDO NO FUNDO 
 modals.forEach(modal => {
     modal.addEventListener("click", e => {
         if (e.target === modal) {
