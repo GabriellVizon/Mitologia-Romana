@@ -361,52 +361,12 @@ section#intro {
 }
 
 /* ===========================
-RESPONSIVIDADE GLOBAL
-MANTENDO O MESMO LAYOUT
+RESPONSIVIDADE - LAYOUT B
+FEED VERTICAL NO MOBILE
 =========================== */
 
-/* Tablets e telas médias */
-@media (max-width: 1200px) {
-
-    .header-container{
-        max-width: 95%;
-        padding: 1.5rem;
-    }
-
-    .deuses-grid,
-    .herois-grid,
-    .criaturas-grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .intro-img h2{
-        left: 120px;
-        top: -70px;
-        font-size: 2rem;
-    }
-}
-
-/* Tablets pequenos */
+/* Tablets */
 @media (max-width: 992px) {
-
-    nav{
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    nav ul{
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    h1{
-        font-size: 3.2rem;
-    }
-
-    h2{
-        font-size: 2.2rem;
-    }
 
     .deuses-grid,
     .herois-grid,
@@ -416,21 +376,45 @@ MANTENDO O MESMO LAYOUT
 
     section#intro{
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.2rem;
     }
 
     .intro-img h2{
         position: static;
-        margin: 0 auto 12px;
-        transform: none;
+        margin-bottom: 10px;
         text-align: center;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    h1{
+        font-size: 3rem;
     }
 }
 
 /* Smartphones */
 @media (max-width: 576px){
 
+    /* GRID -> FEED */
+    .deuses-grid,
+    .herois-grid,
+    .criaturas-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* HEADER */
+    .header-container{
+        flex-direction: column;
+        text-align: center;
+        padding: 1.2rem;
+    }
+
     header h1{
+        white-space: normal;
         font-size: 2.3rem;
     }
 
@@ -438,15 +422,32 @@ MANTENDO O MESMO LAYOUT
         font-size: 1rem;
     }
 
+    /* NAV */
+    nav ul{
+        gap: 0.6rem;
+        padding: 0;
+    }
+
     nav a{
         font-size: 1rem;
         padding: 8px 10px;
     }
 
-    .deuses-grid,
-    .herois-grid,
-    .criaturas-grid{
-        grid-template-columns: 1fr;
+    /* INTRO */
+    section#intro{
+        padding: 15px;
+    }
+
+    .intro-text{
+        font-size: 1.15rem;
+        line-height: 1.6;
+    }
+
+    /* CARDS */
+    .deus-card,
+    .herois-card,
+    .criaturas-card{
+        border-radius: 10px;
     }
 
     .deus-card img,
@@ -455,41 +456,45 @@ MANTENDO O MESMO LAYOUT
         height: 240px;
     }
 
+    /* TEXTOS */
+    p{
+        font-size: 1.05rem;
+    }
+
     h1{
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     h2{
         font-size: 1.9rem;
     }
 
-    p{
-        font-size: 1rem;
-    }
-
-    #t{
-        width: 100%;
-    }
-
+    /* MODAL */
     .modal-content{
-        width: 95%;
-        max-width: none;
+        max-width: 95%;
+        padding: 1.4rem;
     }
 }
 
-/* Telas muito pequenas */
+/* Telas MUITO pequenas */
 @media (max-width: 380px){
 
     h1{
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     h2{
         font-size: 1.7rem;
     }
 
-    header p{
-        font-size: 0.95rem;
+    p{
+        font-size: 1rem;
+    }
+
+    .deus-card img,
+    .herois-card img,
+    .criaturas-card img{
+        height: 210px;
     }
 }
 
